@@ -1,2 +1,2 @@
 # page-static
- Uma simples página estática
+ Uma simples página estática.
