@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'IBM Plex Mono';
     background-color: black;
 }
 
 h1{
     text-transform: uppercase;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 h2{
@@ -20,7 +24,6 @@ h2{
 
 header{
     width: 100%;
-    max-width: 100%;
     background-color: white;
 }
 
@@ -29,6 +32,7 @@ article{
 }
 
 .container{
+    overflow: hidden;
     display: flex;
     justify-content: center;
     margin: 8% auto;
@@ -63,14 +67,6 @@ section img:hover{
     cursor: pointer;
 }
 
-h1:hover{
-    font-size: 3em;
-    font-weight: bold;
-    transition: color 2.5s linear 1.45s;
-    animation-name: example;
-    animation-duration: 6s;
-}
-
 @keyframes example {
     0% {color: black;}
     25%{color:rgb(38, 4, 69)}
@@ -103,16 +99,52 @@ em{
 .container2{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .title-container{
     display: flex;
     justify-content: center;
+    margin: 0 0 0 24%;
 }
 
 .img-fg img{
-    height: auto;;
-    width: 200px;
+    height: auto;
+    width: 240px;
+}
+
+h2 img{
+    height: auto;
+    width: 220px;
+}
+
+strong{
+    color:pink;
+}
+
+audio{
+    mask-repeat: repeat;
+}
+
+#text-article,.title-container2{
+    font-size: 19px;
+    margin-right: 7%;
+}
+
+.container3{
+    margin: 4% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.container3 img{
+    opacity: 0.1;
+}
+
+.container3 div div img{
+    height: 500px;
+    width: auto;
 }
 
